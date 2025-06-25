@@ -1,12 +1,12 @@
 package proyecto.model;
 
-public class Infantil extends Libro implements Vendible{
-  public Infantil(String ISBN, String titulo, int anioPublicacion, float precio){
+public class Infantil extends Libro implements Vendible {
+  public Infantil(String ISBN, String titulo, int anioPublicacion, float precio) {
     super(ISBN, titulo, anioPublicacion, precio);
   }
 
   @Override
-  public String getGenero(){
+  public String getGenero() {
     return "Infantil";
   }
 

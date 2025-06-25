@@ -1,14 +1,15 @@
 package proyecto.model;
 
-public abstract class Libro {
+public abstract class Libro implements Vendible {
   private String ISBN;
   private String titulo;
   private int anioPublicacion;
   private float precio;
 
-  public Libro(){}
+  public Libro() {
+  }
 
-  public Libro(String ISBN, String titulo, int anioPublicacion, float precio){
+  public Libro(String ISBN, String titulo, int anioPublicacion, float precio) {
     this.ISBN = ISBN;
     this.titulo = titulo;
     this.anioPublicacion = anioPublicacion;
