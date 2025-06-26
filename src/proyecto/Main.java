@@ -21,6 +21,7 @@ public class Main {
     libroLibre.agregarLibro(new Infantil("001576", "Necronomicon", 2025, 40000));
 
     //mostramos el stock
+    log.info("Libros en stock: ");
     libroLibre.mostrarLibrosDisponibles();
 
     //vendemos un libro en stock
@@ -36,6 +37,14 @@ public class Main {
     } catch (LibroNoDisponibleExcepcion e) {
       log.info("Error: " + e.getMessage());
     }
+
+    //Mostrar stock actualizado
+    log.info("Libros en stock: ");
+    libroLibre.mostrarLibrosDisponibles();
+
+    //Mostrar resultados finales
+    log.info("Cantidad de ventas: " + libroLibre.getCantidadDeVentas());
+    log.info("Ganancias totales: " + libroLibre.getGanancias());
 
   }
 }
