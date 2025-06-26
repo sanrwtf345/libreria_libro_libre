@@ -52,9 +52,9 @@ public class Libreria {
   public void agregarLibro(Libro l) {
     if (libros.size() < 1000) {
       libros.add(l);
-      log.info("Bicicleta agrgada al inventario" + " " + l.getISBN());
+      log.info("Libro agregado al inventario" + " " + l.getISBN());
     } else {
-      log.info("Ya no se pueden agregar mas bicicletas");
+      log.info("Ya no se pueden agregar mas libros");
     }
   }
 
